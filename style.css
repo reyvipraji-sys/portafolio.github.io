@@ -191,3 +191,51 @@ section.active {
     transform: translateX(0);
   }
 }
+/* === Tarjeta del proyecto MineMits === */
+.project-card {
+  margin-top: 30px;
+  background: rgba(0, 0, 20, 0.7);
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px #00ffff, inset 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+.project-img {
+  width: 250px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 10px #00eaff);
+}
+
+/* === Etiquetas === */
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tag {
+  background: rgba(0, 255, 255, 0.2);
+  border: 1px solid #00eaff;
+  border-radius: 15px;
+  padding: 5px 12px;
+  font-size: 0.9rem;
+  color: #00eaff;
+  text-shadow: 0 0 8px #00eaff;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.tag:hover {
+  background: #00eaff;
+  color: #000;
+  transform: scale(1.1);
+}
+
